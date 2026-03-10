@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>open-lab — Config drops for Claude Code</title>
+
+    <!-- Open Graph (LinkedIn preview card) -->
+    <meta property="og:title" content="open-lab — Config drops for Claude Code">
+    <meta property="og:description" content="Hooks, agents, workflows. Des bouts de config Claude Code open-sourcés, prêts à copier-coller.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://quentinboinot.github.io/open-lab/">
+    <meta property="og:image" content="https://opengraph.githubassets.com/1/quentinboinot/open-lab">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            color: #8b949e;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        .drop {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        .drop h3 { color: #58a6ff; margin-bottom: 0.5rem; }
+        .drop p { color: #8b949e; font-size: 0.95rem; }
+        .btn {
+            display: inline-block;
+            background: #238636;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+        .btn:hover { background: #2ea043; }
+        .author {
+            margin-top: 2rem;
+            color: #8b949e;
+            font-size: 0.85rem;
+        }
+        .author a { color: #58a6ff; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>open-lab</h1>
+        <p class="subtitle">Config drops for Claude Code — hooks, agents, workflows.</p>
+
+        <div class="drop">
+            <h3>#1 — SQL Protection Hook</h3>
+            <p>Un PreToolUse hook qui bloque les requêtes SQL destructives (DROP, DELETE, TRUNCATE) avant qu'elles touchent votre base de données. 10 lignes, zéro dépendance.</p>
+        </div>
+
+        <a href="https://github.com/quentinboinot/open-lab" class="btn">Voir sur GitHub</a>
+
+        <p class="author">Par <a href="https://www.linkedin.com/in/quentin-music/">Quentin</a> — Growth Hacker, automation nerd.</p>
+    </div>
+</body>
+</html>
