@@ -1,0 +1,24 @@
+{
+  "rate_guard": {
+    "rules": {
+      "instagram_*": { "max": 30, "window": 3600 },
+      "camoufox_*": { "max": 10, "window": 60 },
+      "mcp__supabase__*": { "max": 100, "window": 60 }
+    }
+  },
+  "quality_gate": {
+    "checks": ["no_console_log", "no_env_secrets", "no_api_keys", "no_todo"]
+  },
+  "docker_boot": {
+    "containers": ["mcp-chrome", "mcp-playwright"],
+    "compose_file": "",
+    "services": []
+  },
+  "ping_stop": {
+    "enabled": false,
+    "method": "ntfy",
+    "url": "https://ntfy.sh/my-claude-code",
+    "bot_token": "",
+    "chat_id": ""
+  }
+}
